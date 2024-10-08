@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   // Base
@@ -8,7 +8,7 @@ export default plugin(({ addComponents, theme }) => {
       display: 'flex',
       'align-items': 'center',
       gap: theme('spacing.5'),
-      'border-bottom': '1px solid var(--tw-gray-200)',
+      'border-bottom': '1px solid var(--tw-gray-200)'
     },
     '.tab': {
       display: 'inline-flex',
@@ -19,7 +19,7 @@ export default plugin(({ addComponents, theme }) => {
       color: 'var(--tw-gray-700)',
       i: {
         'font-size': theme('fontSize.md'),
-        color: 'var(--tw-gray-600)',
+        color: 'var(--tw-gray-600)'
       },
       'font-weight': theme('fontWeight.medium'),
       padding: `${theme('spacing.4')} 0`,
@@ -27,12 +27,12 @@ export default plugin(({ addComponents, theme }) => {
       '&.active, &:hover, &:focus': {
         color: 'var(--tw-primary)',
         i: {
-          color: 'var(--tw-primary)',
-        },
+          color: 'var(--tw-primary)'
+        }
       },
       '&.active': {
-        'border-bottom-color': 'var(--tw-primary)',
-      },
-    },
-  });
-});
+        'border-bottom-color': 'var(--tw-primary)'
+      }
+    }
+  })
+})

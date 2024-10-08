@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   // Form input
@@ -19,50 +19,50 @@ export default plugin(({ addComponents, theme }) => {
       border: '1px solid var(--tw-gray-300)',
       color: 'var(--tw-gray-700)',
       '&::placeholder': {
-        color: 'var(--tw-gray-500)',
+        color: 'var(--tw-gray-500)'
       },
       '&:hover': {
-        'border-color': 'var(--tw-gray-400)',
+        'border-color': 'var(--tw-gray-400)'
       },
       '&:focus': {
         'border-color': 'var(--tw-primary)',
         'box-shadow': 'var(--tw-form-input-focus-box-shadow)',
         color: 'var(--tw-gray-700)',
         '&::placeholder': {
-          color: 'var(--tw-gray-600)',
-        },
+          color: 'var(--tw-gray-600)'
+        }
       },
       '&:active': {
         color: 'var(--tw-gray-700)',
         '&::placeholder': {
-          color: 'var(--tw-gray-600)',
+          color: 'var(--tw-gray-600)'
         },
-        'box-shadow': 'none',
+        'box-shadow': 'none'
       },
       '&[disabled]': {
         'background-color': 'var(--tw-gray-100)',
         color: 'var(--tw-gray-400)',
         '&::placeholder': {
-          color: 'var(--tw-gray-300)',
-        },
+          color: 'var(--tw-gray-300)'
+        }
       },
       '&[readonly]': {
         'background-color': 'var(--tw-gray-100)',
         color: 'var(--tw-gray-400)',
         '&::placeholder': {
-          color: 'var(--tw-gray-300)',
-        },
-      },
+          color: 'var(--tw-gray-300)'
+        }
+      }
     },
     '.textarea-sm': {
       'font-weight': theme('custom.components.btn.sm.fontWeight'),
       'font-size': theme('custom.components.btn.sm.fontSize'),
-      padding: `${theme('custom.components.btn.sm.py')} ${theme('custom.components.input.sm.px')}`,
+      padding: `${theme('custom.components.btn.sm.py')} ${theme('custom.components.input.sm.px')}`
     },
     '.textarea-lg': {
       'font-weight': theme('custom.components.btn.lg.fontWeight'),
       'font-size': theme('custom.components.btn.lg.fontSize'),
-      padding: `${theme('custom.components.btn.lg.py')} ${theme('custom.components.input.lg.px')}`,
-    },
-  });
-});
+      padding: `${theme('custom.components.btn.lg.py')} ${theme('custom.components.input.lg.px')}`
+    }
+  })
+})

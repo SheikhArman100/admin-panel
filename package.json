@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "lucide-react": "^0.417.0",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
@@ -42,13 +43,5 @@
     "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  },
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "prettier --write"
-    ],
-    "**/*.{html,json,css,scss,md,mdx}": [
-      "prettier -w"
-    ]
   }
 }

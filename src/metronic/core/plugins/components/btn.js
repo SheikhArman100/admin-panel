@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   // Base
@@ -17,7 +17,7 @@ export default plugin(({ addComponents, theme }) => {
       border: '1px solid transparent',
       'font-weight': theme('custom.components.btn.DEFAULT.fontWeight'),
       'font-size': theme('custom.components.btn.DEFAULT.fontSize'),
-      outline: 'none',
+      outline: 'none'
     },
     '.btn-icon': {
       'flex-shrink': '0',
@@ -25,8 +25,8 @@ export default plugin(({ addComponents, theme }) => {
       gap: '0',
       width: theme('custom.components.btn.DEFAULT.height'),
       i: {
-        'line-height': '0 !important',
-      },
+        'line-height': '0 !important'
+      }
     },
     '.btn-xs': {
       height: theme('custom.components.btn.xs.height'),
@@ -36,8 +36,8 @@ export default plugin(({ addComponents, theme }) => {
       'font-size': theme('custom.components.btn.xs.fontSize'),
       gap: theme('custom.components.btn.xs.gap'),
       '&.btn-icon': {
-        width: theme('custom.components.btn.xs.height'),
-      },
+        width: theme('custom.components.btn.xs.height')
+      }
     },
     '.btn-sm': {
       height: theme('custom.components.btn.sm.height'),
@@ -47,8 +47,8 @@ export default plugin(({ addComponents, theme }) => {
       'font-size': theme('custom.components.btn.sm.fontSize'),
       gap: theme('custom.components.btn.sm.gap'),
       '&.btn-icon': {
-        width: theme('custom.components.btn.sm.height'),
-      },
+        width: theme('custom.components.btn.sm.height')
+      }
     },
     '.btn-lg': {
       height: theme('custom.components.btn.lg.height'),
@@ -58,20 +58,20 @@ export default plugin(({ addComponents, theme }) => {
       'font-size': theme('custom.components.btn.lg.fontSize'),
       gap: theme('custom.components.btn.lg.gap'),
       '&.btn-icon': {
-        width: theme('custom.components.btn.lg.height'),
-      },
-    },
-  });
+        width: theme('custom.components.btn.lg.height')
+      }
+    }
+  })
 
   // Disabled state
   addComponents({
     '.btn': {
       '&[disabled], &.disabled': {
         opacity: '0.5',
-        'pointer-events': 'none',
-      },
-    },
-  });
+        'pointer-events': 'none'
+      }
+    }
+  })
 
   // Only icon option
   addComponents({
@@ -80,124 +80,124 @@ export default plugin(({ addComponents, theme }) => {
       'flex-shrink': '0',
       padding: '0',
       gap: '0',
-      width: theme('custom.components.btn.DEFAULT.height'),
+      width: theme('custom.components.btn.DEFAULT.height')
     },
     '.btn-icon.btn-xs': {
-      width: theme('custom.components.btn.xs.height'),
+      width: theme('custom.components.btn.xs.height')
     },
     '.btn-icon.btn-sm': {
-      width: theme('custom.components.btn.sm.height'),
+      width: theme('custom.components.btn.sm.height')
     },
     '.btn-icon.btn-lg': {
-      width: theme('custom.components.btn.lg.height'),
-    },
-  });
+      width: theme('custom.components.btn.lg.height')
+    }
+  })
 
   // Icon sizes
   addComponents({
     '.btn': {
       i: {
         'font-size': theme('custom.components.btn.DEFAULT.iconFontSize'),
-        'line-height': '0 !important',
-      },
+        'line-height': '0 !important'
+      }
     },
     '.btn-icon': {
       i: {
-        'font-size': theme('custom.components.btn.DEFAULT.onlyIconFontSize'),
-      },
+        'font-size': theme('custom.components.btn.DEFAULT.onlyIconFontSize')
+      }
     },
     '.btn-xs': {
       i: {
-        'font-size': theme('custom.components.btn.xs.iconFontSize'),
+        'font-size': theme('custom.components.btn.xs.iconFontSize')
       },
       '&.btn-icon': {
         i: {
-          'font-size': theme('custom.components.btn.xs.onlyIconFontSize'),
-        },
-      },
+          'font-size': theme('custom.components.btn.xs.onlyIconFontSize')
+        }
+      }
     },
     '.btn-sm': {
       i: {
-        'font-size': theme('custom.components.btn.sm.iconFontSize'),
+        'font-size': theme('custom.components.btn.sm.iconFontSize')
       },
       '&.btn-icon': {
         i: {
-          'font-size': theme('custom.components.btn.sm.onlyIconFontSize'),
-        },
-      },
+          'font-size': theme('custom.components.btn.sm.onlyIconFontSize')
+        }
+      }
     },
     '.btn-lg': {
       i: {
-        'font-size': theme('custom.components.btn.lg.iconFontSize'),
+        'font-size': theme('custom.components.btn.lg.iconFontSize')
       },
       '&.btn-icon': {
         i: {
-          'font-size': theme('custom.components.btn.lg.onlyIconFontSize'),
-        },
-      },
+          'font-size': theme('custom.components.btn.lg.onlyIconFontSize')
+        }
+      }
     },
     '.btn-icon-xs': {
       i: {
-        'font-size': `${theme('fontSize.xs')}`,
-      },
+        'font-size': `${theme('fontSize.xs')}`
+      }
     },
     '.btn-icon-sm': {
       i: {
-        'font-size': `${theme('fontSize.sm')}`,
-      },
+        'font-size': `${theme('fontSize.sm')}`
+      }
     },
     '.btn-icon-md': {
       i: {
-        'font-size': `${theme('fontSize.md')}`,
-      },
+        'font-size': `${theme('fontSize.md')}`
+      }
     },
     '.btn-icon-lg': {
       i: {
-        'font-size': `${theme('fontSize.lg')}`,
-      },
+        'font-size': `${theme('fontSize.lg')}`
+      }
     },
     '.btn-icon-xl': {
       i: {
-        'font-size': `${theme('fontSize.xl')}`,
-      },
+        'font-size': `${theme('fontSize.xl')}`
+      }
     },
     '.btn-icon-2xl': {
       i: {
-        'font-size': `${theme('fontSize.2xl')}`,
-      },
-    },
-  });
+        'font-size': `${theme('fontSize.2xl')}`
+      }
+    }
+  })
 
   // Icon extended sizes
   addComponents({
     '.btn': {
       '&.btn-icon-sm': {
         i: {
-          'font-size': `${theme('fontSize.sm')}`,
-        },
+          'font-size': `${theme('fontSize.sm')}`
+        }
       },
       '&.btn-icon-md': {
         i: {
-          'font-size': `${theme('fontSize.md')}`,
-        },
+          'font-size': `${theme('fontSize.md')}`
+        }
       },
       '&.btn-icon-lg': {
         i: {
-          'font-size': `${theme('fontSize.lg')}`,
-        },
+          'font-size': `${theme('fontSize.lg')}`
+        }
       },
       '&.btn-icon-xl': {
         i: {
-          'font-size': `${theme('fontSize.xl')}`,
-        },
+          'font-size': `${theme('fontSize.xl')}`
+        }
       },
       '&.btn-icon-2xl': {
         i: {
-          'font-size': `${theme('fontSize.2xl')}`,
-        },
-      },
-    },
-  });
+          'font-size': `${theme('fontSize.2xl')}`
+        }
+      }
+    }
+  })
 
   // Link varaint
   addComponents({
@@ -215,16 +215,16 @@ export default plugin(({ addComponents, theme }) => {
       '&:hover, &:focus, &:active, &.active': {
         'background-color': 'transparent',
         'border-bottom': '1px dashed var(--tw-primary-active)',
-        color: 'var(--tw-primary-active)',
+        color: 'var(--tw-primary-active)'
       },
       '&.btn-sm': {
-        'font-size': theme('fontSize.xs'),
+        'font-size': theme('fontSize.xs')
       },
       '&.btn-lg': {
-        'font-size': theme('fontSize.sm'),
-      },
-    },
-  });
+        'font-size': theme('fontSize.sm')
+      }
+    }
+  })
 
   // Tabs
   addComponents({
@@ -237,7 +237,7 @@ export default plugin(({ addComponents, theme }) => {
       '.btn': {
         color: 'var(--tw-gray-700)',
         i: {
-          color: 'var(--tw-gray-400)',
+          color: 'var(--tw-gray-400)'
         },
         '&:hover, &:focus, &:active, &.active': {
           'background-color': 'var(--tw-light)',
@@ -245,12 +245,12 @@ export default plugin(({ addComponents, theme }) => {
           color: 'var(--tw-gray-900)',
           'box-shadow': 'var(--tw-light-box-shadow)',
           i: {
-            color: 'var(--tw-gray-500)',
-          },
-        },
-      },
-    },
-  });
+            color: 'var(--tw-gray-500)'
+          }
+        }
+      }
+    }
+  })
 
   // Tabs sizes
   addComponents({
@@ -261,12 +261,12 @@ export default plugin(({ addComponents, theme }) => {
       gap: theme('custom.components.btn.DEFAULT.tabsGap'),
       '.btn': {
         i: {
-          'font-size': theme('custom.components.btn.DEFAULT.iconFontSize'),
+          'font-size': theme('custom.components.btn.DEFAULT.iconFontSize')
         },
         height: `calc(${theme('custom.components.btn.DEFAULT.height')} - 2 * ${theme('custom.components.btn.DEFAULT.tabsGap')})`,
         '&.btn-icon': {
-          width: `calc(${theme('custom.components.btn.DEFAULT.height')} - 2 * ${theme('custom.components.btn.DEFAULT.tabsGap')})`,
-        },
+          width: `calc(${theme('custom.components.btn.DEFAULT.height')} - 2 * ${theme('custom.components.btn.DEFAULT.tabsGap')})`
+        }
       },
       '&.btn-tabs-sm': {
         height: theme('custom.components.btn.sm.height'),
@@ -274,13 +274,13 @@ export default plugin(({ addComponents, theme }) => {
         gap: theme('custom.components.btn.sm.tabsGap'),
         '.btn': {
           i: {
-            'font-size': theme('custom.components.btn.sm.iconFontSize'),
+            'font-size': theme('custom.components.btn.sm.iconFontSize')
           },
           height: `calc(${theme('custom.components.btn.sm.height')} - 2 * ${theme('custom.components.btn.sm.tabsGap')})`,
           '&.btn-icon': {
-            width: `calc(${theme('custom.components.btn.sm.height')} - 2 * ${theme('custom.components.btn.sm.tabsGap')})`,
-          },
-        },
+            width: `calc(${theme('custom.components.btn.sm.height')} - 2 * ${theme('custom.components.btn.sm.tabsGap')})`
+          }
+        }
       },
       '&.btn-tabs-lg': {
         height: theme('custom.components.btn.lg.height'),
@@ -288,16 +288,16 @@ export default plugin(({ addComponents, theme }) => {
         gap: theme('custom.components.btn.lg.tabsGap'),
         '.btn': {
           i: {
-            'font-size': theme('custom.components.btn.lg.iconFontSize'),
+            'font-size': theme('custom.components.btn.lg.iconFontSize')
           },
           height: `calc(${theme('custom.components.btn.lg.height')} - 2 * ${theme('custom.components.btn.lg.tabsGap')})`,
           '&.btn-icon': {
-            width: `calc(${theme('custom.components.btn.lg.height')} - 2 * ${theme('custom.components.btn.lg.tabsGap')})`,
-          },
-        },
-      },
-    },
-  });
+            width: `calc(${theme('custom.components.btn.lg.height')} - 2 * ${theme('custom.components.btn.lg.tabsGap')})`
+          }
+        }
+      }
+    }
+  })
 
   // Input
   addComponents({
@@ -307,10 +307,10 @@ export default plugin(({ addComponents, theme }) => {
       'border-color': 'var(--tw-gray-300)',
       'background-color': 'var(--tw-light-active)',
       i: {
-        color: 'var(--tw-gray-500)',
-      },
-    },
-  });
+        color: 'var(--tw-gray-500)'
+      }
+    }
+  })
 
   // Color varaints
   const colors = [
@@ -321,10 +321,10 @@ export default plugin(({ addComponents, theme }) => {
     'info',
     'dark',
     'light',
-    'secondary',
-  ];
+    'secondary'
+  ]
 
-  colors.forEach((color) => {
+  colors.forEach(color => {
     if (color === 'light') {
       addComponents({
         '.btn-light': {
@@ -332,7 +332,7 @@ export default plugin(({ addComponents, theme }) => {
           'border-color': 'var(--tw-gray-300)',
           'background-color': 'var(--tw-light)',
           i: {
-            color: 'var(--tw-gray-500)',
+            color: 'var(--tw-gray-500)'
           },
           '&:hover, &:focus, &:active, &.active': {
             'border-color': 'var(--tw-gray-300)',
@@ -340,8 +340,8 @@ export default plugin(({ addComponents, theme }) => {
             'box-shadow': 'var(--tw-default-box-shadow)',
             color: 'var(--tw-gray-800)',
             i: {
-              color: 'var(--tw-gray-600)',
-            },
+              color: 'var(--tw-gray-600)'
+            }
           },
           '&[disabled], &.disabled': {
             opacity: '1',
@@ -349,16 +349,16 @@ export default plugin(({ addComponents, theme }) => {
             'border-color': 'var(--tw-gray-200)',
             'background-color': 'var(--tw-light)',
             i: {
-              color: 'var(--tw-gray-400)',
-            },
-          },
+              color: 'var(--tw-gray-400)'
+            }
+          }
         },
         '.btn-light.btn-clear': {
           'border-color': 'transparent',
           'background-color': 'transparent',
           color: 'var(--tw-gray-700)',
           i: {
-            color: 'var(--tw-gray-600)',
+            color: 'var(--tw-gray-600)'
           },
           '&:hover, &:focus, &:active, &.active': {
             'background-color': 'var(--tw-gray-200)',
@@ -366,8 +366,8 @@ export default plugin(({ addComponents, theme }) => {
             'box-shadow': 'none',
             color: 'var(--tw-gray-800)',
             i: {
-              color: 'var(--tw-gray-700)',
-            },
+              color: 'var(--tw-gray-700)'
+            }
           },
           '&[disabled], &.disabled': {
             opacity: '1',
@@ -375,11 +375,11 @@ export default plugin(({ addComponents, theme }) => {
             'border-color': 'transparent',
             'background-color': 'transparent',
             i: {
-              color: 'var(--tw-gray-400)',
-            },
-          },
-        },
-      });
+              color: 'var(--tw-gray-400)'
+            }
+          }
+        }
+      })
     } else if (color === 'secondary') {
       addComponents({
         '.btn-secondary': {
@@ -387,7 +387,7 @@ export default plugin(({ addComponents, theme }) => {
           'border-color': 'var(--tw-gray-200)',
           'background-color': 'var(--tw-secondary)',
           i: {
-            color: 'var(--tw-gray-500)',
+            color: 'var(--tw-gray-500)'
           },
           '&:hover, &:focus, &:active, &.active': {
             'border-color': 'var(--tw-gray-300)',
@@ -395,8 +395,8 @@ export default plugin(({ addComponents, theme }) => {
             'box-shadow': 'var(--tw-default-box-shadow)',
             color: 'var(--tw-gray-800)',
             i: {
-              color: 'var(--tw-gray-600)',
-            },
+              color: 'var(--tw-gray-600)'
+            }
           },
           '&[disabled], &.disabled': {
             opacity: '1',
@@ -404,11 +404,11 @@ export default plugin(({ addComponents, theme }) => {
             'border-color': 'var(--tw-gray-200)',
             'background-color': 'var(--tw-light)',
             i: {
-              color: 'var(--tw-gray-400)',
-            },
-          },
-        },
-      });
+              color: 'var(--tw-gray-400)'
+            }
+          }
+        }
+      })
     } else {
       addComponents({
         [`.btn-${color}`]: {
@@ -416,15 +416,15 @@ export default plugin(({ addComponents, theme }) => {
           'background-color': `var(--tw-${color})`,
           '&:hover, &:focus, &:active, &.active': {
             'background-color': `var(--tw-${color}-active)`,
-            'box-shadow': `var(--tw-${color}-box-shadow)`,
-          },
+            'box-shadow': `var(--tw-${color}-box-shadow)`
+          }
         },
         [`.btn-outline.btn-${color}`]: {
           color: `var(--tw-${color})`,
           'background-color': `var(--tw-${color}-light)`,
           'border-color': `var(--tw-${color}-clarity)`,
           i: {
-            color: `var(--tw-${color})`,
+            color: `var(--tw-${color})`
           },
           '&:hover, &:focus, &:active, &.active': {
             color: `var(--tw-${color}-inverse)`,
@@ -432,9 +432,9 @@ export default plugin(({ addComponents, theme }) => {
             'border-color': `var(--tw-${color})`,
             'box-shadow': `none`,
             i: {
-              color: `var(--tw-${color}-inverse)`,
-            },
-          },
+              color: `var(--tw-${color}-inverse)`
+            }
+          }
         },
         [`.btn-clear.btn-${color}`]: {
           'border-color': 'transparent',
@@ -446,16 +446,16 @@ export default plugin(({ addComponents, theme }) => {
             'border-color': `var(--tw-${color})`,
             'box-shadow': 'none',
             i: {
-              color: `var(--tw-${color}-inverse)`,
-            },
-          },
+              color: `var(--tw-${color}-inverse)`
+            }
+          }
         },
         [`.btn-subtle.btn-${color}`]: {
           'border-color': 'transparent',
           'background-color': 'transparent',
           color: `var(--tw-${color})`,
           i: {
-            color: `var(--tw-${color})`,
+            color: `var(--tw-${color})`
           },
           '&:hover, &:focus, &:active, &.active': {
             color: `var(--tw-${color})`,
@@ -463,18 +463,18 @@ export default plugin(({ addComponents, theme }) => {
             'border-color': `var(--tw-${color}-light)`,
             'box-shadow': `none`,
             i: {
-              color: `var(--tw-${color})`,
-            },
-          },
-        },
-      });
+              color: `var(--tw-${color})`
+            }
+          }
+        }
+      })
     }
-  });
+  })
 
   // Utilities
   addComponents({
     '.btn-rounded': {
-      'border-radius': theme('custom.components.common.borderRadius.btn'),
-    },
-  });
-});
+      'border-radius': theme('custom.components.common.borderRadius.btn')
+    }
+  })
+})

@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents }) => {
   addComponents({
@@ -9,8 +9,8 @@ export default plugin(({ addComponents }) => {
       'background-color': 'var(--tw-drawer-background-color)',
       '&.open': {
         'box-shadow': 'var(--tw-drawer-box-shadow)',
-        transition: 'transform 300ms ease',
-      },
+        transition: 'transform 300ms ease'
+      }
     },
     '.drawer-start': {
       top: '0',
@@ -19,8 +19,8 @@ export default plugin(({ addComponents }) => {
       right: 'auto',
       transform: 'translateX(-100%)',
       '&.drawer.open': {
-        transform: 'translateX(0)',
-      },
+        transform: 'translateX(0)'
+      }
     },
     '.drawer-end': {
       top: '0',
@@ -29,8 +29,8 @@ export default plugin(({ addComponents }) => {
       left: 'auto',
       transform: 'translateX(100%)',
       '&.drawer.open': {
-        transform: 'translateX(0)',
-      },
+        transform: 'translateX(0)'
+      }
     },
     '.drawer-top': {
       top: '0',
@@ -39,8 +39,8 @@ export default plugin(({ addComponents }) => {
       right: '0',
       transform: 'translateY(-100%)',
       '&.drawer.open': {
-        transform: 'translateY(0)',
-      },
+        transform: 'translateY(0)'
+      }
     },
     '.drawer-bottom': {
       bottom: '0',
@@ -49,13 +49,13 @@ export default plugin(({ addComponents }) => {
       right: '0',
       transform: 'translateY(100%)',
       '&.drawer.open': {
-        transform: 'translateY(0)',
-      },
+        transform: 'translateY(0)'
+      }
     },
     '.drawer-backdrop': {
       position: 'fixed',
       inset: 0,
-      'background-color': 'var(--tw-backdrop-background-color)',
-    },
-  });
-});
+      'background-color': 'var(--tw-backdrop-background-color)'
+    }
+  })
+})

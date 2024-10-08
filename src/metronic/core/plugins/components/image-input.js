@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents }) => {
   // Base
@@ -15,7 +15,7 @@ export default plugin(({ addComponents }) => {
         width: '0 !important',
         height: '0 !important',
         overflow: 'hidden',
-        opacity: '0',
+        opacity: '0'
       },
       '.image-input-preview': {
         cursor: 'pointer',
@@ -24,7 +24,7 @@ export default plugin(({ addComponents }) => {
         width: '100%',
         height: '100%',
         'background-size': 'cover',
-        'background-repeat': 'no-repeat',
+        'background-repeat': 'no-repeat'
       },
       '.image-input-placeholder': {
         position: 'relative',
@@ -32,8 +32,8 @@ export default plugin(({ addComponents }) => {
         width: '100%',
         height: '100%',
         'background-size': 'cover',
-        'background-repeat': 'no-repeat',
-      },
-    },
-  });
-});
+        'background-repeat': 'no-repeat'
+      }
+    }
+  })
+})

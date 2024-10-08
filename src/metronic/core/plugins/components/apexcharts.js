@@ -1,21 +1,21 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   // Base
   addComponents({
     '.apexcharts-text, .apexcharts-title-text, .apexcharts-legend-text': {
-      'font-family': 'inherit !important',
+      'font-family': 'inherit !important'
     },
     '.apexcharts-title-text': {
-      'font-weight': theme('fontWeight.normal'),
+      'font-weight': theme('fontWeight.normal')
     },
     '.apexcharts-pie-label': {
       'font-size': theme('fontSize.xs'),
-      'line-height': theme('fontSize.xs.1.lineHeight'),
+      'line-height': theme('fontSize.xs.1.lineHeight')
     },
     '.apexcharts-toolbar': {
-      'text-align': 'left !important',
+      'text-align': 'left !important'
     },
     '.apexcharts-menu': {
       border: '1px solid var(--tw-gray-200) !important',
@@ -28,9 +28,9 @@ export default plugin(({ addComponents, theme }) => {
       '.apexcharts-menu-item': {
         padding: '0.5rem 0.5rem  !important',
         '&:hover': {
-          'background-color': 'var(--tw-gray-100) !important',
-        },
-      },
+          'background-color': 'var(--tw-gray-100) !important'
+        }
+      }
     },
     '.apexcharts-tooltip': {
       border: '1px solid var(--tw-gray-200) !important',
@@ -45,8 +45,8 @@ export default plugin(({ addComponents, theme }) => {
         'line-height': theme('fontSize.2sm.1.lineHeight'),
         'font-weight': theme('fontWeight.medium'),
         color: 'var(--tw-gray-800)',
-        'border-bottom': '1px solid var(--tw-gray-200) !important',
-      },
+        'border-bottom': '1px solid var(--tw-gray-200) !important'
+      }
     },
     '.apexcharts-xaxistooltip': {
       border: '1px solid var(--tw-gray-200) !important',
@@ -55,8 +55,8 @@ export default plugin(({ addComponents, theme }) => {
       'border-radius': '0.625rem',
       color: 'var(--tw-gray-900)',
       '&:before': {
-        'border-bottom': '0 !important',
-      },
+        'border-bottom': '0 !important'
+      }
     },
     '.apexcharts-legend': {
       display: 'flex',
@@ -70,49 +70,49 @@ export default plugin(({ addComponents, theme }) => {
           'font-size': `${theme('fontSize.sm')}`,
           'line-height': theme('fontSize.sm.1.lineHeight'),
           'font-weight': `${theme('fontWeight.medium')}`,
-          color: 'var(--tw-gray-500)',
-        },
-      },
+          color: 'var(--tw-gray-500)'
+        }
+      }
     },
     '.apexcharts-card-rounded': {
       '.apexcharts-canvas': {
         svg: {
           'border-bottom-left-radius': theme(
-            'custom.components.common.borderRadius.card',
+            'custom.components.common.borderRadius.card'
           ),
           'border-bottom-right-radius': theme(
-            'custom.components.common.borderRadius.card',
-          ),
-        },
-      },
+            'custom.components.common.borderRadius.card'
+          )
+        }
+      }
     },
     '.apexcharts-rounded-sm': {
       '.apexcharts-canvas': {
         svg: {
-          'border-radius': theme('borderRadius.sm'),
-        },
-      },
+          'border-radius': theme('borderRadius.sm')
+        }
+      }
     },
     '.apexcharts-rounded': {
       '.apexcharts-canvas': {
         svg: {
-          'border-radius': theme('borderRadius.DEFAULT'),
-        },
-      },
+          'border-radius': theme('borderRadius.DEFAULT')
+        }
+      }
     },
     '.apexcharts-rounded-lg': {
       '.apexcharts-canvas': {
         svg: {
-          'border-radius': theme('borderRadius.lg'),
-        },
-      },
+          'border-radius': theme('borderRadius.lg')
+        }
+      }
     },
     '.apexcharts-rounded-xl': {
       '.apexcharts-canvas': {
         svg: {
-          'border-radius': theme('borderRadius.xl'),
-        },
-      },
-    },
-  });
-});
+          'border-radius': theme('borderRadius.xl')
+        }
+      }
+    }
+  })
+})

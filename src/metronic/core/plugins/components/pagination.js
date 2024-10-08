@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   addComponents({
@@ -19,23 +19,23 @@ export default plugin(({ addComponents, theme }) => {
         color: 'var(--tw-gray-600)',
         i: {
           'font-size': theme('fontSize.base'),
-          color: 'var(--tw-gray-700)',
+          color: 'var(--tw-gray-700)'
         },
         '&:hover, &:focus, &:active, &.active': {
           'background-color': 'var(--tw-gray-200)',
           color: 'var(--tw-gray-800)',
           i: {
-            color: 'var(--tw-gray-900)',
-          },
+            color: 'var(--tw-gray-900)'
+          }
         },
         '&[disabled], &.disabled': {
           opacity: '1',
           'pointer-events': 'none',
           color: 'var(--tw-gray-500)',
           i: {
-            color: 'var(--tw-gray-400)',
-          },
-        },
+            color: 'var(--tw-gray-400)'
+          }
+        }
       },
       '&.pagination-sm': {
         gap: '0.175rem',
@@ -44,9 +44,9 @@ export default plugin(({ addComponents, theme }) => {
           width: '1.575rem',
           'font-size': theme('fontSize.xs'),
           i: {
-            'font-size': theme('fontSize.sm'),
-          },
-        },
+            'font-size': theme('fontSize.sm')
+          }
+        }
       },
       '&.pagination-lg': {
         gap: '0.35rem',
@@ -55,10 +55,10 @@ export default plugin(({ addComponents, theme }) => {
           width: '2.275rem',
           'font-size': theme('fontSize.sm'),
           i: {
-            'font-size': theme('fontSize.xl'),
-          },
-        },
-      },
-    },
-  });
-});
+            'font-size': theme('fontSize.xl')
+          }
+        }
+      }
+    }
+  })
+})

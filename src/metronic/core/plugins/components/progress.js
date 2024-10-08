@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   // Base
@@ -10,7 +10,7 @@ export default plugin(({ addComponents, theme }) => {
       'min-height': '4px',
       overflow: 'hidden',
       'background-color': 'var(--tw-gray-100)',
-      'border-radius': theme('custom.components.common.borderRadius.progress'),
+      'border-radius': theme('custom.components.common.borderRadius.progress')
     },
     '.progress-bar': {
       display: 'flex',
@@ -20,21 +20,21 @@ export default plugin(({ addComponents, theme }) => {
       'text-align': 'center',
       'white-space': 'nowrap',
       'background-color': 'var(--tw-gray-300)',
-      'border-radius': theme('custom.components.common.borderRadius.progress'),
-    },
-  });
+      'border-radius': theme('custom.components.common.borderRadius.progress')
+    }
+  })
 
   // Color options
-  const colors = ['primary', 'success', 'danger', 'warning', 'info', 'dark'];
+  const colors = ['primary', 'success', 'danger', 'warning', 'info', 'dark']
 
-  colors.forEach((color) => {
+  colors.forEach(color => {
     addComponents({
       [`.progress-${color}`]: {
         'background-color': `var(--tw-${color}-light)`,
         '.progress-bar': {
-          'background-color': `var(--tw-${color})`,
-        },
-      },
-    });
-  });
-});
+          'background-color': `var(--tw-${color})`
+        }
+      }
+    })
+  })
+})

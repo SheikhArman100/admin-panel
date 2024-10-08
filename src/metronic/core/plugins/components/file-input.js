@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   // Form input
@@ -21,7 +21,7 @@ export default plugin(({ addComponents, theme }) => {
       border: '1px solid var(--tw-gray-300)',
       color: 'var(--tw-gray-700)',
       '&::placeholder': {
-        color: 'var(--tw-gray-500)',
+        color: 'var(--tw-gray-500)'
       },
       '&::file-selector-button': {
         color: 'var(--tw-gray-600)',
@@ -33,40 +33,40 @@ export default plugin(({ addComponents, theme }) => {
         outline: 'none',
         'background-color': 'transparent',
         'border-top-left-radius': theme(
-          'custom.components.common.borderRadius.btn',
+          'custom.components.common.borderRadius.btn'
         ),
         'border-bottom-left-radius': theme(
-          'custom.components.common.borderRadius.btn',
+          'custom.components.common.borderRadius.btn'
         ),
         border: '0',
         'border-right': '1px solid var(--tw-gray-300)',
-        'box-shadow': 'none',
+        'box-shadow': 'none'
       },
       '&:hover': {
-        'border-color': 'var(--tw-gray-400)',
+        'border-color': 'var(--tw-gray-400)'
       },
       '&:focus': {
         'border-color': 'var(--tw-primary)',
         'box-shadow': 'var(--tw-input-focus-box-shadow)',
         color: 'var(--tw-gray-700)',
         '&::placeholder': {
-          color: 'var(--tw-gray-600)',
-        },
+          color: 'var(--tw-gray-600)'
+        }
       },
       '&:active': {
         color: 'var(--tw-gray-700)',
         '&::placeholder': {
-          color: 'var(--tw-gray-600)',
+          color: 'var(--tw-gray-600)'
         },
-        'box-shadow': 'none',
+        'box-shadow': 'none'
       },
       '&:disabled': {
         'background-color': 'var(--tw-gray-100)',
         color: 'var(--tw-gray-400)',
         '&::placeholder': {
-          color: 'var(--tw-gray-300)',
-        },
-      },
+          color: 'var(--tw-gray-300)'
+        }
+      }
     },
     '.file-input-sm': {
       'font-weight': theme('custom.components.btn.sm.fontWeight'),
@@ -75,8 +75,8 @@ export default plugin(({ addComponents, theme }) => {
       'padding-right': theme('custom.components.btn.sm.px'),
       '&::file-selector-button': {
         'padding-left': theme('custom.components.btn.sm.px'),
-        'padding-right': theme('custom.components.btn.sm.px'),
-      },
+        'padding-right': theme('custom.components.btn.sm.px')
+      }
     },
     '.file-input-lg': {
       'font-weight': theme('custom.components.btn.lg.fontWeight'),
@@ -85,8 +85,8 @@ export default plugin(({ addComponents, theme }) => {
       'padding-right': theme('custom.components.btn.lg.px'),
       '&::file-selector-button': {
         'padding-left': theme('custom.components.btn.lg.px'),
-        'padding-right': theme('custom.components.btn.lg.px'),
-      },
-    },
-  });
-});
+        'padding-right': theme('custom.components.btn.lg.px')
+      }
+    }
+  })
+})

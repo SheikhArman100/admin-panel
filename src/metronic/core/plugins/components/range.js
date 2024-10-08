@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents }) => {
   addComponents({
@@ -11,11 +11,11 @@ export default plugin(({ addComponents }) => {
       '&:focus': {
         outline: 0,
         '&::-webkit-slider-thumb, &::-webkit-slider-thumb': {
-          'box-shadow': '',
-        },
+          'box-shadow': ''
+        }
       },
       '&::-moz-focus-outer': {
-        border: '0',
+        border: '0'
       },
       '&::-webkit-slider-thumb': {
         width: '1.625rem',
@@ -29,8 +29,8 @@ export default plugin(({ addComponents }) => {
         'border-radius': '50%',
         'background-color': 'var(--tw-light)',
         '&:active': {
-          'background-color': 'var(--tw-light)',
-        },
+          'background-color': 'var(--tw-light)'
+        }
       },
       '&::-moz-range-thumb': {
         width: '1.625rem',
@@ -44,8 +44,8 @@ export default plugin(({ addComponents }) => {
         'border-radius': '50%',
         'background-color': 'var(--tw-light)',
         '&:active': {
-          'background-color': 'var(--tw-light)',
-        },
+          'background-color': 'var(--tw-light)'
+        }
       },
       '&::-moz-range-track': {
         width: '100%',
@@ -54,7 +54,7 @@ export default plugin(({ addComponents }) => {
         cursor: 'pointer',
         'background-color': 'var(--tw-gray-200)',
         'border-color': 'transparent',
-        'border-radius': '0.188rem',
+        'border-radius': '0.188rem'
       },
       '&::-webkit-slider-runnable-track': {
         width: '100%',
@@ -63,17 +63,17 @@ export default plugin(({ addComponents }) => {
         cursor: 'pointer',
         'background-color': 'var(--tw-gray-200)',
         'border-color': 'transparent',
-        'border-radius': '0.188rem',
+        'border-radius': '0.188rem'
       },
       '&:disabled': {
         'pointer-events': 'none',
         '&::-webkit-slider-thumb': {
-          'background-color': 'var(--tw-gray-100)',
+          'background-color': 'var(--tw-gray-100)'
         },
         '&::-moz-range-thumb': {
-          'background-color': 'var(--tw-gray-100)',
-        },
-      },
-    },
-  });
-});
+          'background-color': 'var(--tw-gray-100)'
+        }
+      }
+    }
+  })
+})

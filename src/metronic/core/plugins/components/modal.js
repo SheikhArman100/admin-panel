@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   // Base
@@ -15,8 +15,8 @@ export default plugin(({ addComponents, theme }) => {
       transition: 'opacity 300ms ease',
       '&.open': {
         opacity: '1',
-        transition: 'opacity 300ms ease',
-      },
+        transition: 'opacity 300ms ease'
+      }
     },
 
     '.modal-content': {
@@ -27,7 +27,7 @@ export default plugin(({ addComponents, theme }) => {
       'box-shadow': 'var(--tw-modal-box-shadow)',
       'background-color': 'var(--tw-modal-background-color)',
       display: 'flex',
-      'flex-direction': 'column',
+      'flex-direction': 'column'
     },
 
     '.modal-header': {
@@ -38,21 +38,21 @@ export default plugin(({ addComponents, theme }) => {
       'padding-left': theme('spacing')['5'],
       'padding-right': theme('spacing')['5'],
       'padding-top': theme('spacing')['2.5'],
-      'padding-bottom': theme('spacing')['2.5'],
+      'padding-bottom': theme('spacing')['2.5']
     },
 
     '.modal-title': {
       'font-size': theme('fontSize.sm'),
       'line-height': theme('fontSize.sm.1.lineHeight'),
       'font-weight': theme('fontWeight.semibold'),
-      color: 'var(--tw-gray-900)',
+      color: 'var(--tw-gray-900)'
     },
 
     '.modal-body': {
       'padding-left': theme('spacing')['5'],
       'padding-right': theme('spacing')['5'],
       'padding-top': theme('spacing')['2.5'],
-      'padding-bottom': theme('spacing')['2.5'],
+      'padding-bottom': theme('spacing')['2.5']
     },
 
     '.modal-footer': {
@@ -63,36 +63,36 @@ export default plugin(({ addComponents, theme }) => {
       'padding-left': theme('spacing')['5'],
       'padding-right': theme('spacing')['5'],
       'padding-top': theme('spacing')['2.5'],
-      'padding-bottom': theme('spacing')['2.5'],
+      'padding-bottom': theme('spacing')['2.5']
     },
 
     '.modal-table': {
       '.table': {
         'th:first-child, td:first-child': {
-          'padding-left': theme('spacing')['5'],
+          'padding-left': theme('spacing')['5']
         },
         'th:last-child, td:last-child': {
-          'padding-right': theme('spacing')['5'],
-        },
-      },
+          'padding-right': theme('spacing')['5']
+        }
+      }
     },
 
     '.modal-backdrop': {
       position: 'fixed',
       inset: 0,
-      'background-color': 'var(--tw-backdrop-background-color)',
-    },
-  });
+      'background-color': 'var(--tw-backdrop-background-color)'
+    }
+  })
 
   // Utilities
   addComponents({
     '.modal-dialog': {
-      inset: 'auto',
+      inset: 'auto'
     },
 
     '.modal-overlay': {
       inset: '0',
-      height: '100%',
+      height: '100%'
     },
 
     '.modal-center': {
@@ -100,35 +100,35 @@ export default plugin(({ addComponents, theme }) => {
       top: '50%',
       'margin-left': '0',
       'margin-right': '0',
-      transform: 'translate(-50%, -50%)',
+      transform: 'translate(-50%, -50%)'
     },
 
     '.modal-center-y': {
       top: '50%',
-      transform: 'translateY(-50%)',
+      transform: 'translateY(-50%)'
     },
 
     '.modal-center-x': {
       left: '50%',
-      transform: 'translateX(-50%)',
+      transform: 'translateX(-50%)'
     },
 
     '.modal-rounded-t': {
       'border-top-left-radius': theme(
-        'custom.components.common.borderRadius.modal',
+        'custom.components.common.borderRadius.modal'
       ),
       'border-top-right-radius': theme(
-        'custom.components.common.borderRadius.modal',
-      ),
+        'custom.components.common.borderRadius.modal'
+      )
     },
 
     '.modal-rounded-b': {
       'border-bottom-left-radius': theme(
-        'custom.components.common.borderRadius.modal',
+        'custom.components.common.borderRadius.modal'
       ),
       'border-bottom-right-radius': theme(
-        'custom.components.common.borderRadius.modal',
-      ),
-    },
-  });
-});
+        'custom.components.common.borderRadius.modal'
+      )
+    }
+  })
+})

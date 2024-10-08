@@ -1,11 +1,11 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   // Base
   addComponents({
     '.dropdown': {
-      display: 'flex',
+      display: 'flex'
     },
     '.dropdown-toggle': {},
     '.dropdown-content': {
@@ -17,28 +17,28 @@ export default plugin(({ addComponents, theme }) => {
       'background-color': 'var(--tw-dropdown-background-color)',
       'border-radius': theme('custom.components.common.borderRadius.dropdown'),
       '.open.dropdown > &, &.open[data-popper-placement]': {
-        'will-change': 'transform',
-      },
-    },
-  });
+        'will-change': 'transform'
+      }
+    }
+  })
 
   // Utilities
   addComponents({
     '.modal-rounded-t': {
       'border-top-left-radius': theme(
-        'custom.components.common.borderRadius.dropdown',
+        'custom.components.common.borderRadius.dropdown'
       ),
       'border-top-right-radius': theme(
-        'custom.components.common.borderRadius.dropdown',
-      ),
+        'custom.components.common.borderRadius.dropdown'
+      )
     },
     '.modal-rounded-b': {
       'border-bottom-left-radius': theme(
-        'custom.components.common.borderRadius.dropdown',
+        'custom.components.common.borderRadius.dropdown'
       ),
       'border-bottom-right-radius': theme(
-        'custom.components.common.borderRadius.dropdown',
-      ),
-    },
-  });
-});
+        'custom.components.common.borderRadius.dropdown'
+      )
+    }
+  })
+})

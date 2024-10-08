@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents }) => {
   addComponents({
@@ -11,43 +11,43 @@ export default plugin(({ addComponents }) => {
         position: 'absolute',
         left: '9999px',
         '&[disabled]': {
-          display: 'none',
-        },
-      },
+          display: 'none'
+        }
+      }
     },
     '.rating-on': {
-      color: 'var(--tw-warning)',
+      color: 'var(--tw-warning)'
     },
     '.rating-off': {
-      color: 'var(--tw-gray-400)',
+      color: 'var(--tw-gray-400)'
     },
     '.rating-label': {
       display: 'inline-flex',
       'align-items': 'center',
       '.rating-on': {
-        display: 'none',
+        display: 'none'
       },
       '.rating-off': {
-        display: 'inline-flex',
-      },
+        display: 'inline-flex'
+      }
     },
     '.rating:hover label.rating-label, label.rating-label, label.rating-label.checked, div.rating-label.checked':
       {
         '.rating-on': {
-          display: 'inline-flex',
+          display: 'inline-flex'
         },
         '.rating-off': {
-          display: 'none',
-        },
+          display: 'none'
+        }
       },
     'label.rating-label:hover ~ label.rating-label, .rating-input:checked ~ .rating-label':
       {
         '.rating-on': {
-          display: 'none',
+          display: 'none'
         },
         '.rating-off': {
-          display: 'inline-flex',
-        },
+          display: 'inline-flex'
+        }
       },
     '.rating-label.indeterminate': {
       position: 'relative',
@@ -55,14 +55,14 @@ export default plugin(({ addComponents }) => {
         display: 'inline-flex',
         position: 'absolute',
         'z-index': '1',
-        overflow: 'hidden',
+        overflow: 'hidden'
       },
       '.rating-off': {
-        display: 'inline-flex',
-      },
+        display: 'inline-flex'
+      }
     },
     'label.rating-label': {
-      cursor: 'pointer',
-    },
-  });
-});
+      cursor: 'pointer'
+    }
+  })
+})

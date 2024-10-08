@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   // Base
@@ -17,8 +17,8 @@ export default plugin(({ addComponents, theme }) => {
       'font-weight': theme('fontWeight.normal'),
       'line-height': theme('fontSize.xs.1.lineHeight'),
       '&.show': {
-        display: 'block',
-      },
-    },
-  });
-});
+        display: 'block'
+      }
+    }
+  })
+})

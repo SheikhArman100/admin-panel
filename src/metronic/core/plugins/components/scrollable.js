@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import plugin from 'tailwindcss/plugin';
+import plugin from 'tailwindcss/plugin'
 
 export default plugin(({ addComponents, theme }) => {
   addComponents({
@@ -10,35 +10,35 @@ export default plugin(({ addComponents, theme }) => {
         position: 'relative',
         '&::-webkit-scrollbar': {
           width: '0.35rem',
-          height: '0.35rem',
+          height: '0.35rem'
         },
         '&::-webkit-scrollbar-track': {
-          'background-color': 'transparent',
+          'background-color': 'transparent'
         },
         '&::-webkit-scrollbar-thumb': {
-          'border-radius': '1.25rem',
+          'border-radius': '1.25rem'
         },
         '&::-webkit-scrollbar-corner': {
-          'background-color': 'transparent',
-        },
+          'background-color': 'transparent'
+        }
       },
     '.scrollable, .scrollable-hover': {
-      overflow: 'scroll',
+      overflow: 'scroll'
     },
     '.scrollable-y, .scrollable-y-hover': {
-      'overflow-y': 'scroll',
+      'overflow-y': 'scroll'
     },
     '.scrollable-x, .scrollable-x-hover': {
-      'overflow-x': 'scroll',
+      'overflow-x': 'scroll'
     },
     '.scrollable-auto': {
-      overflow: 'auto',
+      overflow: 'auto'
     },
     '.scrollable-y-auto': {
-      'overflow-y': 'auto',
+      'overflow-y': 'auto'
     },
     '.scrollable-x-auto': {
-      'overflow-x': 'auto',
+      'overflow-x': 'auto'
     },
     '.scrollable, .scrollable-y, .scrollable-x, .scrollable-auto, .scrollable-y-auto, .scrollable-x-auto, .scrollable-hover:hover, .scrollable-y-hover:hover, .scrollable-x-hover:hover':
       {
@@ -46,22 +46,22 @@ export default plugin(({ addComponents, theme }) => {
           'var(--tw-scrollbar-thumb-color, var(--tw-gray-200)) transparent',
         '&::-webkit-scrollbar-thumb': {
           'background-color':
-            'var(--tw-scrollbar-thumb-color, var(--tw-gray-200))',
+            'var(--tw-scrollbar-thumb-color, var(--tw-gray-200))'
         },
         '&::-webkit-scrollbar-corner': {
-          'background-color': 'transparent',
-        },
+          'background-color': 'transparent'
+        }
       },
     [`@media (max-width: ${theme('screens.lg')})`]: {
       '.scrollable, .scrollable-hover': {
-        overflow: 'auto',
+        overflow: 'auto'
       },
       '.scrollable-y, .scrollable-y-hover': {
-        'overflow-y': 'auto',
+        'overflow-y': 'auto'
       },
       '.scrollable-x, .scrollable-x-hover': {
-        'overflow-x': 'auto',
-      },
-    },
-  });
-});
+        'overflow-x': 'auto'
+      }
+    }
+  })
+})
