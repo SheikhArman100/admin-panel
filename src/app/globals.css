@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../../public/fonts/duotone/style.css';
+@import '../../public/fonts/filled/style.css';
+@import '../../public/fonts/solid/style.css';
+@import '../../public/fonts/outline/style.css';
+
+#__next {
+  display: contents;
+}
