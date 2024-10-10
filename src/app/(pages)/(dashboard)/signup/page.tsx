@@ -1,7 +1,5 @@
-import Image from 'next/image';
-import React from 'react';
-import googleImage from '../../../../public/media/brand-logos/google.svg';
-import appleDarkImage from '../../../../public/media/brand-logos/apple-black.svg';
+// import googleImage from '../../../../public/media/brand-logos/google.svg';
+// import appleDarkImage from '../../../../public/media/brand-logos/apple-black.svg';
 
 const SignUp = () => {
   return (
@@ -29,7 +27,7 @@ const SignUp = () => {
               </a>
             </div>
           </div>
-          <div className='grid grid-cols-2 gap-2.5'>
+          {/* <div className='grid grid-cols-2 gap-2.5'>
             <a className='btn btn-light btn-sm justify-center' href='#'>
               <Image
                 alt=''
@@ -50,7 +48,7 @@ const SignUp = () => {
               />
               Use Apple
             </a>
-          </div>
+          </div> */}
           <div className='flex items-center gap-2'>
             <span className='border-t border-gray-200 w-full'></span>
             <span className='text-2xs text-gray-500 font-medium uppercase'>
