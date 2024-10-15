@@ -1,3 +1,5 @@
+import CreateAdminButton from "@/components/CreateAdminButton";
+
 const Dashboard = () => {
   return (
     <div className='content grow pt-5'>
@@ -11,6 +13,7 @@ const Dashboard = () => {
               Central Hub for Personal Customization
             </span>
           </div>
+          <CreateAdminButton/>
         </div>
       </div>
     </div>

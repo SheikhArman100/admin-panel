@@ -8,7 +8,7 @@ export const useAuthStore = create(
       setAccessToken: (accessToken: string) => set({ accessToken: accessToken })
     }),
     {
-      name: 'MerchantJwt'
+      name: 'SoftographJwt'
     }
   )
 )

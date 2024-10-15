@@ -1,3 +1,4 @@
+import CookieChecker from '@/components/CookieChecker';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
 import Spinner from '@/components/Spinner';
@@ -10,6 +11,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
+    <CookieChecker>
     <main className='flex grow'>
       <Sidebar />
       <div className='w-full wrapper flex grow flex-col'>
@@ -34,5 +36,6 @@ export default function DashboardLayout({
         {/* <Footer /> */}
       </div>
     </main>
+    </CookieChecker>
   );
 }

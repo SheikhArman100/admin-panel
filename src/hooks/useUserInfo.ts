@@ -8,7 +8,7 @@ const useUserInfo = () => {
   return useQuery({
     queryKey: ["profile"],
     queryFn: async () => {
-      const response = await axiosPublic.get("/auth/user", {
+      const response = await axiosPublic.get("/user/check", {
         withCredentials: true,
       });
 

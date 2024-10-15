@@ -3,10 +3,23 @@ import Spinner from '@/components/Spinner';
 import { CustomError } from '@/error';
 import useAxiosPrivate from '@/hooks/useAxiosPrivate';
 import { useQuery } from '@tanstack/react-query';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const SingleContact = ({ params }: { params: { contactId: string } }) => {
   const axiosPrivate = useAxiosPrivate();
+
+  useEffect(() => {
+    const updateViewedBy = async () => {
+      try {
+        await axiosPrivate.post(`/contact/${params.contactId}/view`, {
+        });
+      } catch (error) {
+        console.error("Error updating 'viewedBy':", error);
+      }
+    };
+
+    updateViewedBy();
+  }, []);
   const { data, isPending, error } = useQuery({
     queryKey: ['contacts', params.contactId],
     queryFn: async () => {
@@ -31,6 +44,7 @@ const SingleContact = ({ params }: { params: { contactId: string } }) => {
       'The page you’re looking for might have been removed, had its name changed, or is temporarily unavailable',
     );
   }
+
 
   const contact = data?.data;
 

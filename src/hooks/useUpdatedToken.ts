@@ -7,7 +7,7 @@ const useUpdatedToken = () => {
   const setAccessToken = useAuthStore((state: any) => state.setAccessToken)
 
   const update = async () => {
-    const response = await axiosPublic.get('/auth/token', {
+    const response = await axiosPublic.get('/user/token', {
       withCredentials: true
     })
 

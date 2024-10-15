@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ProfileDropdown from './ProfileDropdown';
 
 function Header() {
   return (
@@ -35,7 +36,7 @@ function Header() {
               src='/media/profile-image.png'
             />
           </div> */}
-          {/* <ProfileDropdown /> */}
+          <ProfileDropdown />
         </div>
       </div>
     </header>
