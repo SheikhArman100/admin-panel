@@ -1,55 +1,55 @@
-'use client'
-import Spinner from '@/components/Spinner'
-import { IResetPasswordFormData } from '@/interfaces/auth.interface'
-import { resetPassword } from '@/services/auth.service'
-import { resetPasswordSchema } from '@/validation/auth.validation'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { useMutation } from '@tanstack/react-query'
-import { useRouter, useSearchParams } from 'next/navigation'
-import { useState } from 'react'
-import { useForm } from 'react-hook-form'
-import { toast } from 'react-toastify'
+'use client';
+import Spinner from '@/components/Spinner';
+import { IResetPasswordFormData } from '@/interfaces/auth.interface';
+import { resetPassword } from '@/services/auth.service';
+import { resetPasswordSchema } from '@/validation/auth.validation';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useMutation } from '@tanstack/react-query';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const ResetPassword = () => {
-  const [passwordHidden, setPasswordHidden] = useState(true)
-  const searchParams = useSearchParams()
-  const token = searchParams.get('token')
-  const router = useRouter()
+  const [passwordHidden, setPasswordHidden] = useState(true);
+  const searchParams = useSearchParams();
+  const token = searchParams.get('token');
+  const router = useRouter();
   const {
     register,
     handleSubmit,
     reset,
 
-    formState: { errors }
+    formState: { errors },
   } = useForm<IResetPasswordFormData>({
-    resolver: zodResolver(resetPasswordSchema)
-  })
+    resolver: zodResolver(resetPasswordSchema),
+  });
 
   const resetPasswordMutation = useMutation({
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
-    mutationFn: data => resetPassword(data, token)
-  })
+    mutationFn: (data) => resetPassword(data, token),
+  });
 
   const handleResetPassword = (data: IResetPasswordFormData) => {
     resetPasswordMutation.mutate(
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       //@ts-ignore
       {
-        newPassword: data.newPassword
+        newPassword: data.newPassword,
       },
       {
         onError: (data: any) => {
-          toast.error(data.response.data.message)
+          toast.error(data.response.data.message);
         },
-        onSuccess: data => {
-          router.push('/auth/signin')
-          toast.success(data.message)
-          reset()
-        }
-      }
-    )
-  }
+        onSuccess: (data) => {
+          router.push('/auth/signin');
+          toast.success(data.message);
+          reset();
+        },
+      },
+    );
+  };
   return (
     <div className='page-bg flex min-h-screen w-full grow items-center justify-center bg-center bg-no-repeat'>
       <div className='card w-full max-w-[370px]'>
@@ -92,12 +92,12 @@ const ResetPassword = () => {
             )}
           </div>
           <button className='btn btn-primary flex grow justify-center'>
-          {resetPasswordMutation.isPending ? <Spinner /> : <p>Reset</p>}
+            {resetPasswordMutation.isPending ? <Spinner /> : <p>Reset</p>}
           </button>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ResetPassword
+export default ResetPassword;

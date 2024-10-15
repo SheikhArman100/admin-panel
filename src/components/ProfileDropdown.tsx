@@ -68,14 +68,14 @@ const ProfileDropdown = () => {
             </div>
             <div className='border-b border-b-gray-200'></div>
             <div className='py-4'>
-              <div className='menu-item'>
+              {/* <div className='menu-item'>
                 <Link className='menu-link' href="/user">
                   <span className='menu-icon'>
                     <i className='ki-outline ki-profile-circle'></i>
                   </span>
                   <span className='menu-title'>My Profile</span>
                 </Link>
-              </div>
+              </div> */}
               <div className='menu-item'>
                 <Link className='menu-link' href='/auth/change-password'>
                   <span className='menu-icon'>

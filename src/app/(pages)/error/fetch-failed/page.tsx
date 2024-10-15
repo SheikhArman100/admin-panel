@@ -1,7 +1,4 @@
-import SignOutButton from '@/components/SignOutButton'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from 'next/image';
 
 const FetchFailed = () => {
   return (
@@ -26,7 +23,7 @@ const FetchFailed = () => {
         </div> */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FetchFailed
+export default FetchFailed;
